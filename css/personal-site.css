@@ -9,3 +9,19 @@ a:hover{
     background-color: #2288c5;
     color: white;
 }
+ul{
+    list-style: none;
+}
+#about, #contact{
+    background-color: #b7fefc;
+}
+#projects{
+    background-color:#54455f ;
+}
+#about > p{
+    padding: 10px;
+    margin: 0;
+}
+#projects > a{
+    color: black;
+}
