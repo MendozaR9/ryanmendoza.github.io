@@ -11,12 +11,11 @@
     <script src="js/jquery.js"></script>
     <!--    custom css-->
     <link rel="stylesheet" href="css/personal-site.css">
-    <!--   custom javascript-->
-    <script src="js/persona-site.js"></script>
+
 </head>
 <body>
 <!--Navbar-->
-<nav class="navbar navbar-dark navbar-color">
+<nav class="navbar navbar-dark navbar-color ">
 
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -24,14 +23,14 @@
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
     </div>
 </nav>
+<!--links in navbar-->
 <div class="collapse" id="navbarToggleExternalContent">
-    <div class="row d-flex justify-content-center navbar-color ">
-        <div class="whiteLine d-flex align-items-center">
+    <div class="row d-flex justify-content-center navbar-color whiteLine">
+        <div class="whiteLine d-flex align-items-center justify-content-end">
             <ul class="col-12 row justify-content-around mb-0 align-items-center" style="padding: 0">
-                <li class=" smallerText text-center"><a href="#home">Home</a></li>
+                <li class=" smallerText text-center" ><a href="#home" >Home</a></li>
                 <li class=" smallerText text-center"><a href="#about">About</a></li>
                 <li class=" smallerText text-center"><a href="#projects">Projects</a></li>
                 <li class=" smallerText text-center"><a href="#contact">Contact</a></li>
@@ -39,25 +38,150 @@
         </div>
     </div>
 </div>
-<section id="home">
-<h1>Hello, I'm Ryan Mendoza</h1>
+
+<section id="home" class="text-center">
+<h1 id="sans">Hello, I'm Ryan Mendoza</h1>
 <p>Full stack web developer</p>
 </section>
 <!--about me-->
 <section id="about">
     <h2>About me</h2>
-    <p>Random place holder</p>
+    <p>I'm a Web Developer from Dallas, Tx.<br>
+    I enjoy working with html, css, and javascript
+    </p>
 </section>
 <!--projects-->
-<section id="projects">
+<section id="projects" class="text-center">
     <h2>Projects</h2>
-    <a href="https://teamryanpat.github.io/coffee-project/" target="_blank" rel="noopener noreferrer">Coffee projects</a>
+<!--    weather app-->
+    <section class="card web_sites mx-auto mb-4" >
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <h3>Weather Project</h3>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="img/weather_app/weather_app_start.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/weather_app/weather_app_dallas.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/weather_app/weather_app_japan.png" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </section>
+
+
+
+<!--coffee project-->
+    <section class="card web_sites mx-auto mb-4" >
+
+        <div id="coffee" class="carousel slide" data-bs-ride="carousel">
+            <h3>Coffee Project</h3>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img/coffee_project/coffee_home.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/coffee_project/coffee_dark.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/coffee_project/add_coffee.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/coffee_project/added_coffee.png" class="d-block w-100" alt="...">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#coffee" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#coffee" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+<!--    codeup design-->
+   <section class="card web_sites mx-auto mb-4" >
+        <div id="codeup-design" class="carousel slide" data-bs-ride="carousel">
+            <h3>CodeUp Design</h3>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img/codeup_design/codeup_design.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/codeup_design/codeup_design_colorchange.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/codeup_design/mobile.jpg" class="d-block w-100 moble" alt="...">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#codeup-design" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#codeup-design" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+   </section>
+
+<!--    media queries-->
+    <section class="card web_sites mx-auto mb-4" >
+        <div id="media-queries" class="carousel slide" data-bs-ride="carousel">
+            <h3>CodeUp Design</h3>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img/media_queries/media_queries.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/media_queries/media_queries_moble.jpg" class="d-block w-100" alt="...">
+                </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="media-queries" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#media-queries" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 </section>
+<!--contact-->
 <section id="contact">
-    <h2>Contact</h2>
-    <img class="image" src="img/github.png" alt="github">
+    <h2 >Contact</h2>
+    <a href="https://github.com/MendozaR9" target="_blank" rel="noopener noreferrer">
+        <img class="image" src="img/github.png" alt="github">
+    </a>
+    <a href="https://www.linkedin.com/in/ryan-mendoza-00b776231/" target="_blank" rel="noopener noreferrer">
     <img class="image" src="img/linkedin.webp" alt="linkdin">
+    </a>
 </section>
+
+<!--   custom javascript-->
+<script src="js/persona-site.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
