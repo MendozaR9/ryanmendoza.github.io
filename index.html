@@ -14,8 +14,9 @@
 
 </head>
 <body>
-<!--Navbar-->
-<nav class="navbar navbar-dark navbar-color ">
+<!--Navbar mobile-->
+<div id="homeat"></div>
+<nav class="navbar navbar-dark navbar-color sticky-top  d-md-block d-lg-none ">
 
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -26,34 +27,50 @@
     </div>
 </nav>
 <!--links in navbar-->
+<section class="fixed-top class fix-size  d-md-block d-lg-none">
 <div class="collapse" id="navbarToggleExternalContent">
     <div class="row d-flex justify-content-center navbar-color whiteLine">
-        <div class="whiteLine d-flex align-items-center justify-content-end">
-            <ul class="col-12 row justify-content-around mb-0 align-items-center" style="padding: 0">
-                <li class=" smallerText text-center" ><a href="#home" >Home</a></li>
-                <li class=" smallerText text-center"><a href="#about">About</a></li>
-                <li class=" smallerText text-center"><a href="#projects">Projects</a></li>
-                <li class=" smallerText text-center"><a href="#contact">Contact</a></li>
+        <div class="padding d-flex align-items-center justify-content-end">
+            <ul class="col-12 row  mb-0 align-items-center" style="padding: 0; width: 100%">
+                <li class=" smallerText text-center p-0" ><a href="#homeat" >Home</a></li>
+                <li class=" smallerText text-center p-0"><a href="#aboutme">About</a></li>
+                <li class=" smallerText text-center p-0"><a href="#projectsat">Projects</a></li>
+                <li class=" smallerText text-center p-0"><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 </div>
+</section>
+<!--    navbar desktop-->
+<nav class="d-none d-lg-block navbar-color padding sticky-top" >
 
+    <ul class="col-12 row justify-content-around mb-0 align-items-center" style="padding: 0; height: 3rem">
+        <li class=" smallerText text-center col-lg-3" ><a href="#homeat" >Home</a></li>
+        <li class=" smallerText text-center col-lg-3"><a href="#aboutme">About</a></li>
+        <li class=" smallerText text-center col-lg-3"><a href="#projectsat">Projects</a></li>
+        <li class=" smallerText text-center col-lg-3"><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+<!--home-->
 <section id="home" class="text-center">
 <h1 id="sans">Hello, I'm Ryan Mendoza</h1>
-<p>Full stack web developer</p>
+<p id="aboutme">Full stack web developer</p>
 </section>
 <!--about me-->
 <section id="about">
     <h2>About me</h2>
-    <p>I'm a Web Developer from Dallas, Tx.<br>
+    <p id="projectsat">I'm a Web Developer from Dallas, Tx.<br>
     I enjoy working with html, css, and javascript
     </p>
 </section>
 <!--projects-->
 <section id="projects" class="text-center">
     <h2>Projects</h2>
+
 <!--    weather app-->
+    <section class="row px-lg-0" style="width: 100%">
+    <div class="col-lg-6">
     <section class="card web_sites mx-auto mb-4" >
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <h3>Weather Project</h3>
@@ -69,15 +86,20 @@
                 <img src="img/weather_app/weather_app_japan.png" class="d-block w-100" alt="...">
             </div>
 
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <p>This is the first solo project that I worked on. This project was created to help me understand how to use API.
+        It takes weather at a location and gives the weather for the next five days. It also generates a map that show the location where the weather is for
+        and changes the background color depending on the weather.</p>
+
+
     </div>
     </section>
 
@@ -103,20 +125,25 @@
                     <img src="img/coffee_project/added_coffee.png" class="d-block w-100" alt="...">
                 </div>
 
+                <button class="carousel-control-prev" type="button" data-bs-target="#coffee" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#coffee" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#coffee" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#coffee" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <p>The Coffee Project is a group project that uses DOM manipulation to show coffees. It allows the user to
+            look for pre-determine list of coffees by roast type or name. It also allows the user to input a new coffee name and pick a
+            roast for it. The new Coffee will show up on the list and is able to be search for.</p>
+
         </div>
     </section>
-
+    </div>
 <!--    codeup design-->
-   <section class="card web_sites mx-auto mb-4" >
+    <div class="col-lg-6 px-0">
+   <section class="card web_sites mx-auto  mb-4" >
         <div id="codeup-design" class="carousel slide" data-bs-ride="carousel">
             <h3>CodeUp Design</h3>
             <div class="carousel-inner">
@@ -131,20 +158,24 @@
                     <img src="img/codeup_design/mobile.jpg" class="d-block w-100 moble" alt="...">
                 </div>
 
+                <button class="carousel-control-prev" type="button" data-bs-target="#codeup-design" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#codeup-design" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#codeup-design" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#codeup-design" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <p>A Group project using bootstrap. This project changes layout depending on the screen size. This was done
+            using bootstrap. It also has a button at the bottom that change the coloring of the webpage and return to
+            normal when clicked again.</p>
+
         </div>
    </section>
 
 <!--    media queries-->
-    <section class="card web_sites mx-auto mb-4" >
+    <section class="card web_sites mx-auto  mb-4" >
         <div id="media-queries" class="carousel slide" data-bs-ride="carousel">
             <h3>CodeUp Design</h3>
             <div class="carousel-inner">
@@ -156,28 +187,35 @@
                     <img src="img/media_queries/media_queries_moble.jpg" class="d-block w-100" alt="...">
                 </div>
 
-
+                <button class="carousel-control-prev" type="button" data-bs-target="media-queries" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#media-queries" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="media-queries" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#media-queries" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <p>This the first group project that I worked on. This Project made to help me understand media-queries by changing
+            the layout when the screen size changes.</p>
+
         </div>
+    </section>
+    </div>
     </section>
 </section>
 <!--contact-->
 <section id="contact">
     <h2 >Contact</h2>
     <a href="https://github.com/MendozaR9" target="_blank" rel="noopener noreferrer">
-        <img class="image" src="img/github.png" alt="github">
+        <img class="image" src="img/github.png" id="github" alt="github">
     </a>
     <a href="https://www.linkedin.com/in/ryan-mendoza-00b776231/" target="_blank" rel="noopener noreferrer">
-    <img class="image" src="img/linkedin.webp" alt="linkdin">
+    <img class="image" src="img/linkedin.webp" id="linkdin" alt="linkdin">
     </a>
+
+    <div>ryanmendoza.00@gmail.com</div>
+
 </section>
 
 <!--   custom javascript-->

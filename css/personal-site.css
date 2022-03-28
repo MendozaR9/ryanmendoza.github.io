@@ -12,20 +12,41 @@ a:hover{
 ul{
     list-style: none;
 }
+.padding{
+    padding: 0;
+    width: 100%;
+    justify-content: start;
+    margin: 0;
+}
+#navbarToggleExternalContent{
+    margin: 0;
+}
+.fixed-top{
+    top: 5%;
+
+}
+#home{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+#home, #about, #projects, #contact{
+    padding: 2rem 0;
+}
 body{
     background-color: #b7fefc;
+    color: #fb1e18;
 }
-#about{
+#about, #contact{
     background-color: #179c67;
-    color: #fcfcfc;
+    color: #f6f2f2;
 }
 
 #about > p{
-    /*padding: 10px;*/
     margin: 0;
 }
 #about{
     padding-bottom: 10px;
+    text-align: center;
 }
 #projects {
     background-color:#54455f ;
@@ -57,17 +78,21 @@ body{
 .carousel-inner{
     border: #179c67 .3rem solid;
 }
-.whiteLine{
+#projects p {
+    margin-top: 1rem;
+    height: 200px;
+}
+.card{
+    border-radius: 20px;
+}
+.fix-size{
+    width: 100%;
+}
+li{
     padding: 0;
-   width: 100%;
-    justify-content: start;
-    margin: 0;
 }
-#navbarToggleExternalContent{
-    margin: 0;
-}
-@media screen and (min-width:768px) {
+@media screen and (min-width:991px) {
 .web_sites{
-    width: 40%;
+    width: 70%;
 }
 }
