@@ -95,6 +95,18 @@ li{
     border-radius: 20px;
 }
 
+.modal-content{
+    background-color: darkred;
+    color: #f6f2f2;
+}
+.modal-body{
+    background-color: #b7fefc;
+    color: black;
+}
+.btn-modal{
+    background-color: #179c67;
+    color: #f6f2f2;
+}
 @media screen and (min-width:991px) {
 .web_sites{
     width: 70%;
